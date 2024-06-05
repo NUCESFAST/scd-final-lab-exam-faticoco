@@ -1,0 +1,19 @@
+version: "3"
+services:
+  auth:
+    build: ./Auth
+    image: fatima71459/auth
+  classrooms:
+    build: ./Classrooms
+    image: fatima71459/classrooms
+  client:
+    build: ./client
+    image: fatima71459/client
+  event-bus:
+    build: ./event-bus
+    image: fatima71459/event-bus
+  post:
+    build: ./Post
+    image: fatima71459/post
+  mongo:
+    image: mongo

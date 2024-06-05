@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git credentialsId: '1016', url: 'https://github.com/NUCESFAST/scd-final-lab-exam-faticoco.git'
+                git url: 'https://github.com/NUCESFAST/scd-final-lab-exam-faticoco.git', credentialsId: '1016'
             }
         }
         

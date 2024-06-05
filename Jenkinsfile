@@ -1,11 +1,10 @@
-// fatima bilal
 pipeline {
     agent any
 
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/NUCESFAST/scd-final-lab-exam-faticoco.git'
+                git credentialsId: '1016', url: 'https://github.com/NUCESFAST/scd-final-lab-exam-faticoco.git'
             }
         }
         
